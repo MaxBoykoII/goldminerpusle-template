@@ -1,0 +1,28 @@
+/* Styles for the carousel with #latest */
+
+$carousel-color: darken(complement($color), 10%);
+#latest {
+    margin: 40px 0px;
+    img {
+        width: auto;
+        height: 275px;
+        max-height: 275px;
+        margin: 0 auto;
+    }
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-inner {
+    margin-bottom: 50px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: $carousel-color;
+    text-shadow: none;
+}

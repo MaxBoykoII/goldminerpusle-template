@@ -98,5 +98,27 @@ h3,
 #masthead {
   min-height: 199px; }
   #masthead img {
-    display: block;
+    width: 100%;
+    height: auto; }
+
+/* Styles for the carousel with #latest */
+#latest {
+  margin: 40px 0px; }
+  #latest img {
+    width: auto;
+    height: 275px;
+    max-height: 275px;
     margin: 0 auto; }
+
+.carousel-indicators {
+  bottom: -50px; }
+
+.carousel-inner {
+  margin-bottom: 50px; }
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  color: #556ce8;
+  text-shadow: none; }

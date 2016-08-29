@@ -1,6 +1,5 @@
 //import classes to ensure columns have the same size
 @import 'same-size';
-
 //colors
 $color: rgb(238, 221, 130);
 $lighter-color: #FAF3DD;
@@ -14,7 +13,6 @@ body {
 }
 
 @import 'header';
-
 h1,
 h2,
 h3,
@@ -24,7 +22,4 @@ h3,
 }
 
 @import 'masthead';
-
-
-
-
+@import 'carousel';
