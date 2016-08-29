@@ -1,0 +1,102 @@
+/* From: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height */
+/* columns of same height styles */
+.container-xs-height {
+  display: table;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.row-xs-height {
+  display: table-row; }
+
+.col-xs-height {
+  display: table-cell;
+  float: none; }
+
+@media (min-width: 768px) {
+  .container-sm-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .row-sm-height {
+    display: table-row; }
+  .col-sm-height {
+    display: table-cell;
+    float: none; } }
+
+@media (min-width: 992px) {
+  .container-md-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .row-md-height {
+    display: table-row; }
+  .col-md-height {
+    display: table-cell;
+    float: none; } }
+
+@media (min-width: 1200px) {
+  .container-lg-height {
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .row-lg-height {
+    display: table-row; }
+  .col-lg-height {
+    display: table-cell;
+    float: none; } }
+
+/* vertical alignment styles */
+.col-top {
+  vertical-align: top; }
+
+.col-middle {
+  vertical-align: middle; }
+
+.col-bottom {
+  vertical-align: bottom; }
+
+body {
+  background-color: #FAF3DD;
+  font-family: font-awesome, sans-serif; }
+
+/* Header css */
+header {
+  background-color: #e2c528;
+  padding-top: 1%;
+  text-align: left; }
+
+.navbar {
+  background-color: #eedd82; }
+  .navbar a {
+    color: #172da7 !important;
+    font-family: "Oswald Regular", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .navbar a:hover {
+      color: #8293ee !important; }
+
+h1,
+.lead {
+  display: inline;
+  font-weight: bold; }
+
+@media (max-width: 591px) {
+  .lead {
+    display: block; } }
+
+@media (max-width: 991px) {
+  p.hidden-xs {
+    font-size: small; } }
+
+h1,
+h2,
+h3,
+.highlight,
+.navbar a {
+  font-family: 'Oswald', arial narrow, sans-serif; }
+
+#masthead {
+  min-height: 199px; }
+  #masthead img {
+    display: block;
+    margin: 0 auto; }

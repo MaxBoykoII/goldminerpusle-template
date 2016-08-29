@@ -1,0 +1,30 @@
+//import classes to ensure columns have the same size
+@import 'same-size';
+
+//colors
+$color: rgb(238, 221, 130);
+$lighter-color: #FAF3DD;
+$font-stack: font-awesome,
+sans-serif;
+$header-font-stack: "Oswald Regular",
+sans-serif;
+body {
+    background-color: $lighter-color;
+    font-family: $font-stack;
+}
+
+@import 'header';
+
+h1,
+h2,
+h3,
+.highlight,
+.navbar a {
+    font-family: 'Oswald', arial narrow, sans-serif;
+}
+
+@import 'masthead';
+
+
+
+

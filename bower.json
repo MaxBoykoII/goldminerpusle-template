@@ -1,0 +1,41 @@
+{
+  "name": "goldminerpulse-template",
+  "description": "A new template for www.goldminerpulse.com",
+  "main": "index.js",
+  "authors": [
+    "Max Boyko <maxboykomax@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "jquery",
+    "bootstrap"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+                "dist/js/bootstrap.min.js",
+                "dist/css/bootstrap.min.css"
+                ]
+    },
+    "font-awesome": {
+      "main": [
+                "css/font-awesome.min.css"
+                ]
+    }
+  }
+}

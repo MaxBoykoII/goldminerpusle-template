@@ -1,0 +1,27 @@
+{
+  "name": "goldminerpulse-template",
+  "version": "1.0.0",
+  "description": "A new template for www.goldminerpulse.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "jquery",
+    "bootstrap"
+  ],
+  "author": "Max Boyko <maxboykomax@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp-inject": "^4.1.0",
+    "gulp-sass": "^2.3.2",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

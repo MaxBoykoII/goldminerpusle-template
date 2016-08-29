@@ -1,0 +1,36 @@
+/* Header css */
+
+header {
+    background-color: darken($color, 20%);
+    padding-top: 1%;
+    text-align: left;
+}
+.navbar {
+    background-color: $color;
+    a {
+        color: darken(complement($color), 35%) !important;
+        font-family: $header-font-stack;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover {
+            color:complement($color) !important;
+        }
+    }
+}
+
+h1,
+.lead {
+    display: inline;
+    font-weight: bold;
+}
+
+@media (max-width: 591px) {
+    .lead {
+        display: block;
+    }
+}
+@media (max-width: 991px){
+    p.hidden-xs {
+        font-size: small;
+    }
+}

@@ -1,0 +1,1 @@
+# Template for new Goldminerpulse site
