@@ -1,25 +1,66 @@
-//import classes to ensure columns have the same size
 @import 'same-size';
-//colors
-$color: rgb(238, 221, 130);
-$lighter-color: #FAF3DD;
-$font-stack: font-awesome,
-sans-serif;
-$header-font-stack: "Oswald Regular",
-sans-serif;
-body {
-    background-color: $lighter-color;
-    font-family: $font-stack;
+@import 'config';
+@import 'math-utilities';
+@mixin scale($power) {
+    //pow is from math-utilities
+    font-size: pow($ms-ratio, $power)*1em;
 }
 
-@import 'header';
+body {
+    font-family: $font-stack;
+    font-size: 21px;
+    @media(max-width: $break-point-1) {
+        font-size: 16px;
+    }
+}
+
+.container {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+@import 'sections/header';
 h1,
 h2,
 h3,
 .highlight,
 .navbar a {
-    font-family: 'Oswald', arial narrow, sans-serif;
+    font-family: $header-font-stack;
 }
 
-@import 'masthead';
-@import 'carousel';
+h1 {
+    @include scale(4) font-size: 2.4414em;
+    line-height: 1.2093em;
+    margin-bottom: 0.6046em;
+}
+
+h2 {
+    @include scale(3) font-size: 1.9531em;
+    line-height: 1.5116em;
+    margin-bottom: 0.7558em;
+}
+
+h3 {
+    @include scale(1) line-height: 1.1810em;
+    margin-bottom: 1.1810em;
+    max-width: 28.5714285714em;
+}
+
+p {
+    @include scale(0) line-height: 1.5;
+    line-height: 1.4762em;
+    margin-bottom: 1.4762em;
+}
+
+li {
+    @include scale(0) line-height: 1.4762em;
+    margin-bottom: 1.4762em;
+}
+
+.img-float-left {
+    float: left;
+    margin-right: 1em;
+}
+
+@import 'sections/masthead';
+@import 'sections/footer';
