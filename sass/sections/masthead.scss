@@ -1,5 +1,4 @@
 #masthead {
-    width: 100%;
     min-height: 199px;
     background-color: $dark-grey;
     display: flex;
@@ -8,8 +7,13 @@
     justify-content: center;
     h1,
     p {
-        color: #fff;
         text-align: center;
+    }
+    h1 {
+        color: #fff;
+    }
+    p {
+        color: $grey;
     }
     
 }

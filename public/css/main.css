@@ -72,9 +72,20 @@ body {
   background-color: #CEAC41;
   padding-top: 1em; }
   .navbar .navbar-brand {
-    text-transform: none; }
+    text-transform: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .navbar .navbar-brand span {
+      padding-left: 0.33333em;
+      color: white;
+      font-size: 1.25em;
+      line-height: 1.1810em; }
   .navbar a {
-    color: #233b86 !important;
+    color: #e5d5a4 !important;
     font-family: "Oswald", arial narrow, sans-serif;
     text-transform: uppercase;
     font-weight: bold; }
@@ -122,7 +133,6 @@ li {
   margin-right: 1em; }
 
 #masthead {
-  width: 100%;
   min-height: 199px;
   background-color: #2d3033;
   display: -webkit-box;
@@ -136,8 +146,11 @@ li {
           justify-content: center; }
   #masthead h1,
   #masthead p {
-    color: #fff;
     text-align: center; }
+  #masthead h1 {
+    color: #fff; }
+  #masthead p {
+    color: rgba(255, 255, 255, 0.7); }
 
 footer {
   background-color: #2d3033;
@@ -150,3 +163,5 @@ footer {
     font-size: 0.8em;
     line-height: 1.8452em;
     margin-top: 1.8452em; }
+  footer p, footer .small-paragraph, footer h3 {
+    color: rgba(255, 255, 255, 0.7); }

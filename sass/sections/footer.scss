@@ -10,4 +10,7 @@ footer {
         line-height: 1.8452em;
         margin-top: 1.8452em;
     }
+    p, .small-paragraph, h3 {
+        color: $grey;
+    }
 }
