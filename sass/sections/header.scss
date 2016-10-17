@@ -1,31 +1,18 @@
 /* Header css */
 
 .navbar {
-    background-color: $gold-light;
+    background-color: $gold;
+    padding-top: 1em;
+    .navbar-brand {
+        text-transform: none;
+    }
     a {
-        color: $blue-dark !important;
+        color: darken(complement($gold), 20%) !important;
         font-family: $header-font-stack;
         text-transform: uppercase;
         font-weight: bold;
         &:hover {
-            color: $blue;
+            color: complement($gold) !important;
         }
-    }
-}
-
-h1,
-.lead {
-    display: inline;
-    font-weight: bold;
-}
-
-@media (max-width: 591px) {
-    .lead {
-        display: block;
-    }
-}
-@media (max-width: 991px){
-    p.hidden-xs {
-        font-size: small;
     }
 }

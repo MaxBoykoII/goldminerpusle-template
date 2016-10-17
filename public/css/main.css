@@ -69,27 +69,17 @@ body {
 
 /* Header css */
 .navbar {
-  background-color: #DAC27C; }
+  background-color: #CEAC41;
+  padding-top: 1em; }
+  .navbar .navbar-brand {
+    text-transform: none; }
   .navbar a {
-    color: #003366 !important;
+    color: #233b86 !important;
     font-family: "Oswald", arial narrow, sans-serif;
     text-transform: uppercase;
     font-weight: bold; }
     .navbar a:hover {
-      color: #336699; }
-
-h1,
-.lead {
-  display: inline;
-  font-weight: bold; }
-
-@media (max-width: 591px) {
-  .lead {
-    display: block; } }
-
-@media (max-width: 991px) {
-  p.hidden-xs {
-    font-size: small; } }
+      color: #4163ce !important; }
 
 h1,
 h2,
@@ -132,10 +122,22 @@ li {
   margin-right: 1em; }
 
 #masthead {
-  min-height: 199px; }
-  #masthead img {
-    width: 100%;
-    height: auto; }
+  width: 100%;
+  min-height: 199px;
+  background-color: #2d3033;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 0;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #masthead h1,
+  #masthead p {
+    color: #fff;
+    text-align: center; }
 
 footer {
   background-color: #2d3033;
