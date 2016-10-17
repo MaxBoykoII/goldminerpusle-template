@@ -57,7 +57,8 @@
 
 body {
   font-family: font-awesome, sans-serif;
-  font-size: 21px; }
+  font-size: 21px;
+  padding-top: 4em; }
   @media (max-width: 767px) {
     body {
       font-size: 16px; } }
@@ -67,20 +68,15 @@ body {
   padding-right: 2em; }
 
 /* Header css */
-header {
-  background-color: #e2c528;
-  padding-top: 1%;
-  text-align: left; }
-
 .navbar {
-  background-color: #eedd82; }
+  background-color: #DAC27C; }
   .navbar a {
-    color: #172da7 !important;
+    color: #003366 !important;
     font-family: "Oswald", arial narrow, sans-serif;
     text-transform: uppercase;
     font-weight: bold; }
     .navbar a:hover {
-      color: #8293ee !important; }
+      color: #336699; }
 
 h1,
 .lead {

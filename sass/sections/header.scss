@@ -1,19 +1,14 @@
 /* Header css */
 
-header {
-    background-color: darken($color, 20%);
-    padding-top: 1%;
-    text-align: left;
-}
 .navbar {
-    background-color: $color;
+    background-color: $gold-light;
     a {
-        color: darken(complement($color), 35%) !important;
+        color: $blue-dark !important;
         font-family: $header-font-stack;
         text-transform: uppercase;
         font-weight: bold;
         &:hover {
-            color:complement($color) !important;
+            color: $blue;
         }
     }
 }
