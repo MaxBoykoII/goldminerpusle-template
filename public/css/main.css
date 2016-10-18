@@ -70,6 +70,8 @@ body {
 /* Header css */
 .navbar {
   background-color: #CEAC41;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-top: 1em; }
   .navbar .navbar-brand {
     text-transform: none;
@@ -144,10 +146,10 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  #masthead h1,
+  #masthead h2,
   #masthead p {
     text-align: center; }
-  #masthead h1 {
+  #masthead h2 {
     color: #fff; }
   #masthead p {
     color: rgba(255, 255, 255, 0.7); }
