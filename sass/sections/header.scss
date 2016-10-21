@@ -16,11 +16,11 @@
         }
     }
     a {
-        color: lighten($gold-light, 10%) !important;
+        color: lighten($gold-light, 15%) !important;
         font-family: $header-font-stack;
         text-transform: uppercase;
         font-weight: bold;
-        &:hover {
+        .active, &:hover {
             color: complement($gold) !important;
         }
     }

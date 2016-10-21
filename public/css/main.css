@@ -87,11 +87,11 @@ body {
       font-size: 1.25em;
       line-height: 1.1810em; }
   .navbar a {
-    color: #e5d5a4 !important;
+    color: #ebdeb8 !important;
     font-family: "Oswald", arial narrow, sans-serif;
     text-transform: uppercase;
     font-weight: bold; }
-    .navbar a:hover {
+    .navbar a .active, .navbar a:hover {
       color: #4163ce !important; }
 
 h1,
@@ -167,3 +167,22 @@ footer {
     margin-top: 1.8452em; }
   footer p, footer .small-paragraph, footer h3 {
     color: rgba(255, 255, 255, 0.7); }
+
+/* Page specific css */
+/* Specific css for statistics page */
+.statistics-wrapper {
+  padding-left: 0;
+  padding-top: 4em;
+  margin-left: 1em; }
+  .statistics-wrapper nav ul {
+    list-style-type: none; }
+    .statistics-wrapper nav ul li {
+      margin-bottom: 0; }
+    .statistics-wrapper nav ul .nav-title {
+      font-size: 1em;
+      line-height: 1.5;
+      line-height: 1.4762em;
+      margin-bottom: 1.4762em; }
+  .statistics-wrapper .section-link {
+    font-size: 0.8em;
+    line-height: 1.8452em; }

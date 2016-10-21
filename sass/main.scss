@@ -48,13 +48,15 @@ h3 {
 }
 
 p {
-    @include scale(0) line-height: 1.5;
+    @include scale(0) 
+    line-height: 1.5;
     line-height: 1.4762em;
     margin-bottom: 1.4762em;
 }
 
 li {
-    @include scale(0) line-height: 1.4762em;
+    @include scale(0) 
+    line-height: 1.4762em;
     margin-bottom: 1.4762em;
 }
 
@@ -65,3 +67,7 @@ li {
 
 @import 'sections/masthead';
 @import 'sections/footer';
+
+/* Page specific css */
+
+@import 'pages/statistics';
