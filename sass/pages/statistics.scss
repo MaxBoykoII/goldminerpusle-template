@@ -2,22 +2,6 @@
 
 .statistics-wrapper {
     padding-left: 0;
-    padding-top: 4em;
+    padding-top: 2em;
     margin-left: 1em;
-    nav ul {
-        list-style-type: none;
-        li {
-            margin-bottom: 0;
-        }
-        .nav-title {
-            @include scale(0) 
-            line-height: 1.5;
-            line-height: 1.4762em;
-            margin-bottom: 1.4762em;
-        }
-    }
-    .section-link {
-        @include scale(-1) 
-        line-height: 1.8452em;
-    }
 }

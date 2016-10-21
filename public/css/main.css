@@ -58,7 +58,8 @@
 body {
   font-family: font-awesome, sans-serif;
   font-size: 21px;
-  padding-top: 4em; }
+  padding-top: 4em;
+  position: relative; }
   @media (max-width: 767px) {
     body {
       font-size: 16px; } }
@@ -168,21 +169,40 @@ footer {
   footer p, footer .small-paragraph, footer h3 {
     color: rgba(255, 255, 255, 0.7); }
 
+.sidebar-nav {
+  background-color: #454a4e;
+  width: 20%;
+  height: 100%;
+  position: absolute; }
+  .sidebar-nav nav {
+    position: fixed; }
+
+.sidebar-nav ul {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  list-style-type: none; }
+  .sidebar-nav ul li {
+    margin-bottom: 0; }
+
+.nav-title {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  line-height: 1.4762em;
+  margin-bottom: 1.4762em; }
+
+.section-link {
+  font-size: 0.8em;
+  line-height: 1.8452em;
+  color: rgba(255, 255, 255, 0.7); }
+  .section-link:hover, .section-link:focus {
+    color: #fff !important;
+    text-decoration: none !important; }
+
 /* Page specific css */
 /* Specific css for statistics page */
 .statistics-wrapper {
   padding-left: 0;
-  padding-top: 4em;
+  padding-top: 2em;
   margin-left: 1em; }
-  .statistics-wrapper nav ul {
-    list-style-type: none; }
-    .statistics-wrapper nav ul li {
-      margin-bottom: 0; }
-    .statistics-wrapper nav ul .nav-title {
-      font-size: 1em;
-      line-height: 1.5;
-      line-height: 1.4762em;
-      margin-bottom: 1.4762em; }
-  .statistics-wrapper .section-link {
-    font-size: 0.8em;
-    line-height: 1.8452em; }
