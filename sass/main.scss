@@ -21,7 +21,7 @@ body {
     padding-right: 2em;
 }
 
-@import 'sections/header';
+@import 'components/header';
 h1,
 h2,
 h3,
@@ -68,9 +68,10 @@ li {
     margin-right: 1em;
 }
 
-@import 'sections/masthead';
-@import 'sections/footer';
-@import 'sections/sidebar-nav';
+@import 'components/masthead';
+@import 'components/footer';
+@import 'components/sidebar-nav';
+@import 'components/table';
 
 /* Page specific css */
 

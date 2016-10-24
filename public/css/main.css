@@ -91,9 +91,12 @@ body {
     color: #ebdeb8 !important;
     font-family: "Oswald", arial narrow, sans-serif;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: 700; }
     .navbar a .active, .navbar a:hover {
       color: #4163ce !important; }
+    .navbar a .current {
+      font-weight: 800;
+      color: white; }
 
 h1,
 h2,
@@ -205,6 +208,12 @@ footer {
   .section-link:hover, .section-link:focus {
     color: #fff !important;
     text-decoration: none !important; }
+
+.golden-thead {
+  background-color: #d8be6a; }
+  .golden-thead td {
+    color: white;
+    font-weight: 500; }
 
 /* Page specific css */
 /* Specific css for statistics page */

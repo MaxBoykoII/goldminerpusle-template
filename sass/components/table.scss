@@ -1,0 +1,7 @@
+.golden-thead {
+    background-color: lighten($gold, 10%);
+    td {
+        color: lighten($beige-light, 15%);
+        font-weight: 500;
+    }
+}

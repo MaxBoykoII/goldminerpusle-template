@@ -19,9 +19,13 @@
         color: lighten($gold-light, 15%) !important;
         font-family: $header-font-stack;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 700;
         .active, &:hover {
             color: complement($gold) !important;
+        }
+        .current {
+           font-weight: 800;
+           color: lighten($beige-light, 20%);
         }
     }
 }
