@@ -122,7 +122,6 @@ h3 {
 
 p {
   font-size: 1em;
-  line-height: 1.5;
   line-height: 1.4762em;
   margin-bottom: 1.4762em; }
 
@@ -173,13 +172,20 @@ footer {
   background-color: #454a4e;
   width: 20%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .sidebar-nav nav {
     position: fixed; }
 
 .sidebar-nav ul {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+  padding: 0;
   list-style-type: none; }
   .sidebar-nav ul li {
     margin-bottom: 0; }
@@ -193,8 +199,8 @@ footer {
   margin-bottom: 1.4762em; }
 
 .section-link {
-  font-size: 0.8em;
-  line-height: 1.8452em;
+  font-size: 0.64em;
+  line-height: 2.3065em;
   color: rgba(255, 255, 255, 0.7); }
   .section-link:hover, .section-link:focus {
     color: #fff !important;

@@ -1,0 +1,40 @@
+  .sidebar-nav {
+      background-color: lighten($dark-grey, 10%);
+      width: 20%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      nav {
+          position: fixed;
+      }
+  }
+  
+  .sidebar-nav ul {
+      transform: translateY(50%);
+      padding: 0;
+      list-style-type: none;
+      li {
+          margin-bottom: 0;
+      }
+  }
+  
+  .nav-title {
+      @include scale(0);
+      color: #fff;
+      font-weight: 500;
+      line-height: 1.5;
+      line-height: 1.4762em;
+      margin-bottom: 1.4762em;
+  }
+  
+  .section-link {
+      @include scale(-2);
+      line-height: 2.3065em;
+      color: $grey;
+      &:hover,
+      &:focus {
+          color: #fff!important;
+          text-decoration: none !important;
+      }
+  }
