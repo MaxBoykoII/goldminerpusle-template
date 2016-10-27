@@ -12,7 +12,8 @@
         span {
             padding-left: 1/3*1em;
             color: lighten($beige-light, 15%);
-            @include scale(1) line-height: 1.1810em;
+            @include scale(1); 
+            line-height: 1.1810em;
         }
     }
     a {
@@ -20,12 +21,20 @@
         font-family: $header-font-stack;
         text-transform: uppercase;
         font-weight: 700;
-        .active, &:hover {
+         &:hover {
             color: complement($gold) !important;
         }
-        .current {
-           font-weight: 800;
-           color: lighten($beige-light, 20%);
+    }
+    .current{
+        color: lighten($beige-light, 10%) !important;
+        background-color: transparent !important;
+        
+        &:hover {
+            color: $beige-light !important;
         }
+    }
+    .dropdown-menu a {
+        color: #000000 !important;
+        text-transform: none;
     }
 }

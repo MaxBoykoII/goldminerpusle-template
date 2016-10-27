@@ -34,7 +34,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="current">Statistics</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle current" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Statistics <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#production-stats">Gold and Silver Production</a></li>
+                                <li><a href="#compnay-categories">Company Distribution</a></li>
+                                <li><a href="#daily-update-counts">Daily Update Counts</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Charts</a></li>
                         <li><a href="#">Latest</a></li>
                         <li><a href="#">Services</a></li>
@@ -45,66 +52,67 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
-    <div class="sidebar-nav hidden-xs">
-        <nav>
-            <ul>
-                <li class="nav-title">Statistics</li>
-                <li><a href="#production-stats" class="section-link">Gold and Silver Production</a></li>
-                <li><a href="#daily-update-counts" class="section-link">Reserves and Resources</a></li>
-            </ul>
-        </nav>
-    </div>
     <div class="container statistics-wrapper">
-        <div class="row">
-            <div class="col-sm-8 col-xs-10 col-sm-offset-4 col-xs-offset-1">
-                <section id="production-stats">
-                    <h2 class="text-center"> Gold and Silver Production</h2>
-                    <h3 class="text-center">Production Based on Last/Latest Four Quarters</h3>
-                    <p>Using the most recently available quarterly production reports, the gold and silver stocks listed on the TSX/TSXv are reporting production totals on a rolling 4 quarters of:</p>
-                    <ul>
-                        <li><strong>Gold: 25.17M ounces</strong>(862.97 tons or 782.87 tonnes), a -0.4% change over the 4 quarters ending at the prior quarter.</li>
-                        <li><strong>Silver: 179.02M ounces</strong>(6,137.83 tons or 5,568.14 tonnes), a -3.2% change over the previous 4 quarters ending at the prior quarter.</li>
-                    </ul>
-                </section>
-                <section id="daily-update-counts">
-                    <h2 class="text-center">Daily Update Counts for Gold and Silver Miners</h2>
-                    <p>The following plot shows showing a per day count of gold/silver producers/developers/explorers with one or more "metric impacting" Sedar updates (e.g. resource disclosures, financial statements, shares for debt, private placements,
-                        options grants, project ownership changes, mergers/acquisitions, etc.).</p>
-                    <p>As of 11 July 2016, plot updates are being made at the end of each trading day, typically after GLD, GDX and GDXJ have reported their daily stats.</p>
-                    <img src="https://www.goldminerpulse.com/corrxy/plots/sedar_updates_tn.png" alt="Shanghai Gold Exchange, year to date gold deliveries from vault" class="img-responsive img-float-left">
-                    <p>Click on the thumb nail plot for a full page view. The trend line in the full page view clearly shows the TSX/TSXv gold/silver miner group filing activity is shrinking.</p>
-                    <p>Note: Snapshots are always taken at 4PM of the current day. Any filings after 4PM will only be counted at the next close.</p>
-                </section>
-                <section id="company-categories">
-                    <h2 class="text-center"> TSX/TSXv Companies by Category</h2>
-                    <p>TSX/TSXv company may appear at most one time in the following table. Companies without a gold/silver resource (generators, historic and grass roots) are included on the basis of qualitative assessment of descriptions published in quarterly
-                        financial statements.</p>
-                    <table class="table table-responsive table-hover table-condensed table-stripped">
-                        <thead class="golden-thead">
-                            <tr>
-                                <td>Category</td>
-                                <td>Number of Companies</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Gold/Silver Streaming and Royalty Companies</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>Gold/Silver Producers</td>
-                                <td>80</td>
-                            </tr>
-                            <tr>
-                                <td>Gold/Silver Developers</td>
-                                <td>107</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+        <section id="production-stats">
+            <h2 class="text-center"> Gold and Silver Production</h2>
+            <h3 class="text-center">Production Based on Last/Latest Four Quarters</h3>
+            <p>Using the most recently available quarterly production reports, the gold and silver stocks listed on the TSX/TSXv are reporting production totals on a rolling 4 quarters of:</p>
+            <ul>
+                <li><strong>Gold: 25.17M ounces</strong>(862.97 tons or 782.87 tonnes), a -0.4% change over the 4 quarters ending at the prior quarter.</li>
+                <li><strong>Silver: 179.02M ounces</strong>(6,137.83 tons or 5,568.14 tonnes), a -3.2% change over the previous 4 quarters ending at the prior quarter.</li>
+            </ul>
+        </section>
+        <section id="company-categories">
+            <h2 class="text-center"> TSX/TSXv Companies by Category</h2>
+            <p>TSX/TSXv company may appear at most one time in the following table. Companies without a gold/silver resource (generators, historic and grass roots) are included on the basis of qualitative assessment of descriptions published in quarterly
+                financial statements.</p>
+            <table class="table table-responsive table-hover table-condensed table-striped">
+                <thead class="golden-thead">
+                    <tr>
+                        <td>Category</td>
+                        <td>Number of Companies</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gold/Silver Streaming and Royalty Companies</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Gold/Silver Producers</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Gold/Silver Developers</td>
+                        <td>107</td>
+                    </tr>
+                    <tr>
+                        <td>Gold/Silver Explorers</td>
+                        <td>206</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Companies Listed in Sedar.com (Current, historic, TSX/TSXv, CNDX, and others. See Note 1)
+                        </td>
+                        <td>
+                            ~30,000
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <small><strong>Note 1</strong>: All TSX/TSXv listed companies are required to file in Sedar.com. However, Sedar.com companies include current companies, companies that no longer file (i.e. as a result of take over, merger, re-organization, bankruptcy, etc.), CNDX companies (Canadian over the counter market listings), and companies listed on foreign exchanges (e.g. US OTC, London, etc.) that have some connection with Canadian investors.
 
-            </div>
-        </div>
+ </small>
+        </section>
+        <section id="daily-update-counts">
+            <h2 class="text-center">Daily Update Counts for Gold and Silver Miners</h2>
+            <p>The following plot shows showing a per day count of gold/silver producers/developers/explorers with one or more "metric impacting" Sedar updates (e.g. resource disclosures, financial statements, shares for debt, private placements, options
+                grants, project ownership changes, mergers/acquisitions, etc.).</p>
+            <p>As of 11 July 2016, plot updates are being made at the end of each trading day, typically after GLD, GDX and GDXJ have reported their daily stats.</p>
+            <img src="https://www.goldminerpulse.com/corrxy/plots/sedar_updates_tn.png" alt="Shanghai Gold Exchange, year to date gold deliveries from vault" class="img-responsive img-float-left">
+            <p>Click on the thumb nail plot for a full page view. The trend line in the full page view clearly shows the TSX/TSXv gold/silver miner group filing activity is shrinking.</p>
+            <p>Note: Snapshots are always taken at 4PM of the current day. Any filings after 4PM will only be counted at the next close.</p>
+        </section>
     </div>
     <footer>
         <div class="container">

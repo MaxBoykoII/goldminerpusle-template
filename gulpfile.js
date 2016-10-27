@@ -24,6 +24,6 @@ gulp.task('inject', () => {
 gulp.task('compile:sass', () => {
     return gulp.src('./sass/main.scss')
         .pipe($.sass().on('error', $.sass.logError))
-        .pipe($.autoprefixer({browsers: ['last 2 version', '>1%']}))
+        .pipe($.autoprefixer({browsers: ['last 3 version', '>0.5%']}))
         .pipe(gulp.dest('./public/css'));
 });

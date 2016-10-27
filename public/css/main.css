@@ -1,59 +1,15 @@
-/* From: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height */
-/* columns of same height styles */
-.container-xs-height {
-  display: table;
-  padding-left: 0px;
-  padding-right: 0px; }
+/* Configuration for several bootstrap classes */
+.dropdown .dropdown-menu {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0; }
 
-.row-xs-height {
-  display: table-row; }
-
-.col-xs-height {
-  display: table-cell;
-  float: none; }
-
-@media (min-width: 768px) {
-  .container-sm-height {
-    display: table;
-    padding-left: 0px;
-    padding-right: 0px; }
-  .row-sm-height {
-    display: table-row; }
-  .col-sm-height {
-    display: table-cell;
-    float: none; } }
-
-@media (min-width: 992px) {
-  .container-md-height {
-    display: table;
-    padding-left: 0px;
-    padding-right: 0px; }
-  .row-md-height {
-    display: table-row; }
-  .col-md-height {
-    display: table-cell;
-    float: none; } }
-
-@media (min-width: 1200px) {
-  .container-lg-height {
-    display: table;
-    padding-left: 0px;
-    padding-right: 0px; }
-  .row-lg-height {
-    display: table-row; }
-  .col-lg-height {
-    display: table-cell;
-    float: none; } }
-
-/* vertical alignment styles */
-.col-top {
-  vertical-align: top; }
-
-.col-middle {
-  vertical-align: middle; }
-
-.col-bottom {
-  vertical-align: bottom; }
+.dropdown.open .dropdown-menu {
+  max-height: 300px;
+  opacity: 1; }
 
 body {
   font-family: font-awesome, sans-serif;
@@ -92,11 +48,16 @@ body {
     font-family: "Oswald", arial narrow, sans-serif;
     text-transform: uppercase;
     font-weight: 700; }
-    .navbar a .active, .navbar a:hover {
+    .navbar a:hover {
       color: #4163ce !important; }
-    .navbar a .current {
-      font-weight: 800;
-      color: white; }
+  .navbar .current {
+    color: #faf4ea !important;
+    background-color: transparent !important; }
+    .navbar .current:hover {
+      color: #EFDEC2 !important; }
+  .navbar .dropdown-menu a {
+    color: #000000 !important;
+    text-transform: none; }
 
 h1,
 h2,
@@ -137,6 +98,9 @@ li {
   float: left;
   margin-right: 1em; }
 
+.gi-2x {
+  font-size: 2em; }
+
 #masthead {
   min-height: 199px;
   background-color: #2d3033;
@@ -171,26 +135,31 @@ footer {
   footer p, footer .small-paragraph, footer h3 {
     color: rgba(255, 255, 255, 0.7); }
 
-.sidebar-nav {
+.sidebar-wrapper {
   background-color: #454a4e;
   width: 20%;
   height: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .sidebar-nav nav {
+  position: absolute; }
+  .sidebar-wrapper .nav-wrapper {
+    width: inherit; }
+  .sidebar-wrapper nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-justify-content: center;
+    width: inherit;
     position: fixed; }
 
-.sidebar-nav ul {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+.sidebar-wrapper ul {
+  -webkit-transform: translateY(60%);
+      -ms-transform: translateY(60%);
+          transform: translateY(60%);
   padding: 0;
   list-style-type: none; }
-  .sidebar-nav ul li {
+  .sidebar-wrapper ul li {
     margin-bottom: 0; }
 
 .nav-title {
@@ -218,6 +187,4 @@ footer {
 /* Page specific css */
 /* Specific css for statistics page */
 .statistics-wrapper {
-  padding-left: 0;
-  padding-top: 2em;
-  margin-left: 1em; }
+  padding-top: 2em; }
